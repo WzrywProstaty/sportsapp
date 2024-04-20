@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Glory';
+    src: local('Glory Regular'), local('Glory-Regular'),
+    url('types/Glory-Regular.woff2') format('woff2'),
+    url('types/Glory-Regular.woff') format('woff'),
+    url('types/Glory-Regular.ttf') format('truetype'),
+    url('types/Glory-Regular.svg#Glory-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glory';
+    src: local('Glory Thin'), local('Glory-Thin'),
+    url('types/Glory-Thin.woff2') format('woff2'),
+    url('types/Glory-Thin.woff') format('woff'),
+    url('types/Glory-Thin.ttf') format('truetype'),
+    url('types/Glory-Thin.svg#Glory-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glory';
+    src: local('Glory Bold Italic'), local('Glory-BoldItalic'),
+    url('types/Glory-BoldItalic.woff2') format('woff2'),
+    url('types/Glory-BoldItalic.woff') format('woff'),
+    url('types/Glory-BoldItalic.ttf') format('truetype'),
+    url('types/Glory-BoldItalic.svg#Glory-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Glory';
+    src: local('Glory Medium Italic'), local('Glory-MediumItalic'),
+    url('types/Glory-MediumItalic.woff2') format('woff2'),
+    url('types/Glory-MediumItalic.woff') format('woff'),
+    url('types/Glory-MediumItalic.ttf') format('truetype'),
+    url('types/Glory-MediumItalic.svg#Glory-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Glory';
+    src: local('Glory Light'), local('Glory-Light'),
+    url('types/Glory-Light.woff2') format('woff2'),
+    url('types/Glory-Light.woff') format('woff'),
+    url('types/Glory-Light.ttf') format('truetype'),
+    url('types/Glory-Light.svg#Glory-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glory';
+    src: local('Glory SemiBold'), local('Glory-SemiBold'),
+    url('types/Glory-SemiBold.woff2') format('woff2'),
+    url('types/Glory-SemiBold.woff') format('woff'),
+    url('types/Glory-SemiBold.ttf') format('truetype'),
+    url('types/Glory-SemiBold.svg#Glory-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glory';
+    src: local('Glory Thin Italic'), local('Glory-ThinItalic'),
+    url('types/Glory-ThinItalic.woff2') format('woff2'),
+    url('types/Glory-ThinItalic.woff') format('woff'),
+    url('types/Glory-ThinItalic.ttf') format('truetype'),
+    url('types/Glory-ThinItalic.svg#Glory-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Glory';
+    src: local('Glory ExtraBold Italic'), local('Glory-ExtraBoldItalic'),
+    url('types/Glory-ExtraBoldItalic.woff2') format('woff2'),
+    url('types/Glory-ExtraBoldItalic.woff') format('woff'),
+    url('types/Glory-ExtraBoldItalic.ttf') format('truetype'),
+    url('types/Glory-ExtraBoldItalic.svg#Glory-ExtraBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Glory';
+    src: local('Glory Bold'), local('Glory-Bold'),
+    url('types/Glory-Bold.woff2') format('woff2'),
+    url('types/Glory-Bold.woff') format('woff'),
+    url('types/Glory-Bold.ttf') format('truetype'),
+    url('types/Glory-Bold.svg#Glory-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glory';
+    src: local('Glory Italic'), local('Glory-Italic'),
+    url('types/Glory-Italic.woff2') format('woff2'),
+    url('types/Glory-Italic.woff') format('woff'),
+    url('types/Glory-Italic.ttf') format('truetype'),
+    url('types/Glory-Italic.svg#Glory-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Glory';
+    src: local('Glory Medium'), local('Glory-Medium'),
+    url('types/Glory-Medium.woff2') format('woff2'),
+    url('types/Glory-Medium.woff') format('woff'),
+    url('types/Glory-Medium.ttf') format('truetype'),
+    url('types/Glory-Medium.svg#Glory-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glory';
+    src: local('Glory Light Italic'), local('Glory-LightItalic'),
+    url('types/Glory-LightItalic.woff2') format('woff2'),
+    url('types/Glory-LightItalic.woff') format('woff'),
+    url('types/Glory-LightItalic.ttf') format('truetype'),
+    url('types/Glory-LightItalic.svg#Glory-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Glory';
+    src: local('Glory SemiBold Italic'), local('Glory-SemiBoldItalic'),
+    url('types/Glory-SemiBoldItalic.woff2') format('woff2'),
+    url('types/Glory-SemiBoldItalic.woff') format('woff'),
+    url('types/Glory-SemiBoldItalic.ttf') format('truetype'),
+    url('types/Glory-SemiBoldItalic.svg#Glory-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Glory';
+    src: local('Glory ExtraLight Italic'), local('Glory-ExtraLightItalic'),
+    url('types/Glory-ExtraLightItalic.woff2') format('woff2'),
+    url('types/Glory-ExtraLightItalic.woff') format('woff'),
+    url('types/Glory-ExtraLightItalic.ttf') format('truetype'),
+    url('types/Glory-ExtraLightItalic.svg#Glory-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Glory';
+    src: local('Glory ExtraLight'), local('Glory-ExtraLight'),
+    url('types/Glory-ExtraLight.woff2') format('woff2'),
+    url('types/Glory-ExtraLight.woff') format('woff'),
+    url('types/Glory-ExtraLight.ttf') format('truetype'),
+    url('types/Glory-ExtraLight.svg#Glory-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glory';
+    src: local('Glory ExtraBold'), local('Glory-ExtraBold'),
+    url('types/Glory-ExtraBold.woff2') format('woff2'),
+    url('types/Glory-ExtraBold.woff') format('woff'),
+    url('types/Glory-ExtraBold.ttf') format('truetype'),
+    url('types/Glory-ExtraBold.svg#Glory-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

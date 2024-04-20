@@ -1,0 +1,24 @@
+@import "~Shared/ui-kit/Colors.scss";
+
+.btn{
+  background: $colBlack01;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 10px;
+  height: 48px;
+  color: white;
+  padding: 6px 15px;
+  cursor: pointer;
+}
+.btn_s{
+  height: 48px;
+  font-size: 4rem;
+}
+.btn_l{
+  height: 61px;
+  font-size: 5rem;
+  font-weight: 700;
+}
+.btn__disabled{
+  background-color: #CDCDCD;
+}

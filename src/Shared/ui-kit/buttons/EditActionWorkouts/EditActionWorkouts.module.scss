@@ -1,0 +1,53 @@
+@import "~Shared/ui-kit/Colors.scss";
+
+.btn_container{
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-style: none;
+  display: flex;
+  min-width: 87px;
+  min-height: 109px;
+  padding-bottom: 16px;
+  align-items: center;
+  flex-direction: column;
+  .icon_box{
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon{
+      filter: invert(1);
+      height: 65%;
+      width: 65%;
+    }
+  }
+  .span{
+    margin-top: 11px;
+    color: black;
+    font-size: 3rem;
+  }
+}
+.btn_container_active{
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25),
+              inset 0px -2px 4px rgba(0, 0, 0, 0.25);
+  background-color: $colOrange01;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 7px 15px 7px;
+  .icon_box{
+    border-radius: unset;
+    box-shadow: none;
+    .icon{
+      filter: unset;
+    }
+  }
+  .span{
+    margin-top: unset;
+    color: white;
+  }
+}

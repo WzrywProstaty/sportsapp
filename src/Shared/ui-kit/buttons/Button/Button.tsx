@@ -1,5 +1,6 @@
 import styles from './Button.module.scss'
 import PropsButton from "./ButtonTypes.ts";
+import classIterator from '~Shared/ui-kit/_ComponentSharedMethods/ClassIterator/ClassIterator.ts';
 
 const Button: React.FC<PropsButton> = ({
                                            className,
@@ -7,14 +8,27 @@ const Button: React.FC<PropsButton> = ({
                                            disabled = false,
                                            template,
                                            ...rest }) => {
+const classNames: string = classIterator(
+    {
+        c: true,
+        s: styles.btn
+    },
+    {
+        c: !!className,
+        s: className || '',
+    },
+    {
+        c: disabled,
+        s: styles.btn__disabled,
+    },
+    {
+        c: true,
+        s: sizeSwitch(size)
+    }
+);
     return (
         <>
-            <button {...rest} className={`
-            ${styles.btn + ' '}
-            ${className ? className : '' + ' '}
-            ${disabled ? styles.btn__disabled : '' + ' '}
-            ${sizeSwitch(size)}
-            `}>
+            <button {...rest} className={classNames}>
                 {template}
             </button>
         </>

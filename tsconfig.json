@@ -19,14 +19,15 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    /* Shortcuts */
+    "paths": {
+      "~Shared/*": ["./src/Shared/*"],
+      "~App/*": ["./src/App/*"]
+    },
   },
   "include": [
     "src", "src/App/types"
   ],
-  "paths": {
-    "~Shared/*": ["./src/Shared/*"],
-    "~App/*": ["./src/App/*"]
-  },
   "references": [{ "path": "./tsconfig.node.json" }]
 }

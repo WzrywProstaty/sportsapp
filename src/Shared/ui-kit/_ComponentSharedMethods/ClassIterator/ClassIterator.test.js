@@ -4,17 +4,9 @@ const cliter = ClassIterator.default;
 
 test('check if it works', ()=>{
     expect(
-        cliter({
-                c: true,
-                s: 'yes01'
-            },
-            {
-                c: false,
-                s: 'yes02'
-            },
-            {
-                c: !false,
-                s: 'yes03'
-            }
-        )).toBe('yes01 yes03')
+        cliter(
+            'string1',
+            'string2',
+            'string3'
+        )).toBe('string1 string2 string3')
 })

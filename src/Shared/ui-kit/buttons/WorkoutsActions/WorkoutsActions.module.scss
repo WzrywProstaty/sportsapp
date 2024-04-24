@@ -1,4 +1,5 @@
 @import "~Shared/ui-kit/Colors.scss";
+@import "~Shared/ui-kit/Effects.scss";
 
 .btn_container{
   outline: none;
@@ -15,7 +16,7 @@
     height: 60px;
     width: 60px;
     border-radius: 10px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    @include shadowBottom(out);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,8 +34,7 @@
 }
 .btn_container_active{
   border-radius: 10px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25),
-              inset 0px -2px 4px rgba(0, 0, 0, 0.25);
+  @include shadowBottom(both);
   background-color: $colOrange01;
   display: flex;
   justify-content: space-between;

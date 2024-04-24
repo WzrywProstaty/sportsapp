@@ -1,7 +1,7 @@
-import styles from './EditActionWorkouts.module.scss'
+import styles from './WorkoutsActions.module.scss'
 import pencilSVG from "~Shared/ui-kit/icons/pencil.svg"
-import PropsEditActionWorkouts from "./EditActionWorkouts.ts";
-const EditActionWorkouts: React.FC<PropsEditActionWorkouts> = ({
+import PropsEditActionWorkouts from "./WorkoutsActions.ts";
+const WorkoutsActions: React.FC<PropsEditActionWorkouts> = ({
         className,
         isActive = false,
         text = "button",
@@ -22,4 +22,4 @@ const EditActionWorkouts: React.FC<PropsEditActionWorkouts> = ({
         </button>
     )
 }
-export {EditActionWorkouts}
+export {WorkoutsActions}

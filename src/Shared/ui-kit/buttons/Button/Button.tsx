@@ -7,12 +7,15 @@ const Button: React.FC<PropsButton> = ({
     size,
     disabled = false,
     template,
-    ...rest }) => {
+    squared,
+    ...rest
+}) => {
 
     const classNames: string = classIterator(
         styles.btn,
         className ? className : '',
         disabled ? styles.btn__disabled : '',
+        squared ? styles.btn__squared: '',
         sizeSwitch(size)
         );
 
@@ -36,4 +39,4 @@ function sizeSwitch (size: string): string{
     }
 }
 
-export {Button as Button}
+export default Button

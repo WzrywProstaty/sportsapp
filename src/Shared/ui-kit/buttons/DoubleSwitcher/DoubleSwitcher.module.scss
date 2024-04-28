@@ -1,0 +1,18 @@
+@import '~Shared/ui-kit/Effects.scss';
+
+.ds_container{
+    display: flex;
+    flex-direction: row;
+}
+.ds_button__override__inactive{
+    color: black;
+    @include shadowBottom(out);
+    background-color: unset;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+.ds_arrows{
+    margin: 0 7px 0 7px;
+    display: flex;
+    align-items: center;
+    font-size: 5rem;
+}

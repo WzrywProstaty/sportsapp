@@ -10,16 +10,23 @@
   color: white;
   padding: 6px 15px;
   cursor: pointer;
+  font-size: 4rem;
 }
 .btn_s{
   height: 48px;
-  font-size: 4rem;
 }
 .btn_l{
+  @include shadowBottom(both);
+  background-color: $colOrange01;
   height: 61px;
-  font-size: 5rem;
-  font-weight: 700;
+  //font-size: 5rem;
+  //font-weight: 700;
 }
 .btn__disabled{
   background-color: #CDCDCD;
+}
+.btn__squared{
+  aspect-ratio: 1 / 1;
+  width: auto;
+  height: auto;
 }

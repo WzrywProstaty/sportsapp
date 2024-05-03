@@ -1,0 +1,132 @@
+@import "~Shared/ui-kit/Colors.scss";
+@import "~Shared/ui-kit/Effects.scss";
+
+.cb__dropdown{
+  @include shadowBottom(out);
+  min-width: 373px;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.cb_head, .cb_head>.cb_head_textarea{
+  transition: padding 0.3s,
+              background-color 0.3s,
+              border-radius 0.3s,
+              color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.cb_head_textarea{
+  font-size: 4rem;
+  font-weight: 300;
+
+  display: inline-block;
+  //height: 46px;
+  width: 100%;
+  outline: none;
+  padding: 5px 11px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  resize: none;
+
+  border: none ;
+  border-radius: 10px;
+}
+.cb_head_textarea__readonly{
+  cursor: pointer;
+  &:focus{
+    outline: none;
+  }
+}
+.cb_head_textarea__edited{
+  border: 2px solid $colShadowOrange76;
+  color: $colShadowOrange76;
+  @include shadowIn();
+  &:focus{
+    border: 2px solid black;
+    color: black;
+  }
+}
+.cb_head_textarea__removed{
+  cursor: pointer;
+  @include shadowBottom(both);
+  background-color: $colShadowOrange76;
+  text-decoration: line-through;
+  &:focus{
+    outline: none;
+    @include shadowBottom(both);
+  }
+}
+
+.cb_head__opened{
+  color: white;
+  padding: 6px 12px 2px 12px;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.14);
+  &>.cb_head_textarea{
+    padding: 0;
+  }
+}
+.cb_head__collapsed{
+  border: none ;
+  border-top: 2px solid $colShadow25;
+  border-radius: 10px;
+}
+.cb_head__black{
+  background-color: $colBlack01;
+  color: white;
+  &>.cb_head_textarea{
+    background-color: $colBlack01;
+    color: white;
+  }
+}
+.cb_head__color{
+  background-color: $colOrange01;
+  color: white;
+  &>.cb_head_textarea{
+    background-color: $colBlack01;
+    color: white;
+  }
+}
+
+
+
+.cb_content_wrapper{
+  display: grid;
+  grid-template-rows: 1fr;
+  font-size: 4rem;
+  transition: 0.15s grid-template-rows,
+              0.15s padding;
+  &>div{
+    overflow: hidden;
+  }
+}
+.cb_content_wrapper__collapsed{
+  padding: 0;
+  grid-template-rows: 0fr;
+  transition: 0.3s grid-template-rows,
+              0.3s padding;
+  &>.cb_content{
+    padding: 0;
+  }
+}
+.cb_content{
+  transition: 0.3s padding;
+  padding: 11px 11px;
+}
+.cb_content__shadow{
+  @include shadowBottom(in, rgba(0, 0, 0, 12%))
+}
+
+.cb_cellular{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 22px;
+  min-height: 63px;
+  background-color: white;
+}

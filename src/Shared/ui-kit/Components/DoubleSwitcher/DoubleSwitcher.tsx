@@ -1,7 +1,7 @@
 import styles from './DoubleSwitcher.module.scss'
-import PropsDoubleSwitch from './DoubleSwitcherTypes';
+import PropsDoubleSwitch from './DoubleSwitcherTypes.ts';
 import {Button} from '~Shared/ui-kit';
-import classIterator from '~Shared/ui-kit/_ComponentSharedMethods/ClassIterator/ClassIterator';
+import classIterator from '~Shared/ui-kit/_ComponentSharedMethods/ClassIterator/ClassIterator.ts';
 
 const DoubleSwitcher: React.FC<PropsDoubleSwitch> = ({
     btn01IsActive = false,
@@ -15,9 +15,11 @@ const DoubleSwitcher: React.FC<PropsDoubleSwitch> = ({
         styles.ds_container
     );
     const btn01Classes = classIterator(
+        styles.ds_button__override,
         !btn01IsActive ? styles.ds_button__override__inactive : '',
     );
     const btn02Classes = classIterator(
+        styles.ds_button__override,
         !btn02IsActive ? styles.ds_button__override__inactive : '',
     );
 

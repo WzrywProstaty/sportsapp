@@ -1,6 +1,8 @@
+import {expect, test} from "vitest";
+
 import ClassIterator from './ClassIterator.ts'
 
-const cliter = ClassIterator.default;
+const cliter = ClassIterator;
 
 test('check if it works', ()=>{
     expect(

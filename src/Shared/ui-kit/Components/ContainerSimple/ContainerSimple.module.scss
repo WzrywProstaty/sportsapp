@@ -1,0 +1,10 @@
+@import "~Shared/ui-kit/Effects.scss";
+
+.container_simple{
+  display: flex;
+  width: min-content;
+  @include shadowBottom(out);
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  padding: 12px;
+}

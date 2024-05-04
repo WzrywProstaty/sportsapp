@@ -1,7 +1,7 @@
-import styles from './ContainerNamed.module.scss'
-import PropsContainerNamed from "~Shared/ui-kit/Components/ContainerNamed/ContainerNamedTypes.ts";
+import styles from './ContainerDropdown.module.scss'
+import PropsContainerDropdown from "~Shared/ui-kit/Components/ContainerNamed/ContainerDropdownTypes.ts";
 import classNames from "classnames";
-const ContainerNamed: React.FC<PropsContainerNamed> = ({
+const ContainerDropdown: React.FC<PropsContainerDropdown> = ({
     edited = false,
     removed = false,
     isDropdown = true,
@@ -57,4 +57,4 @@ const ContainerNamed: React.FC<PropsContainerNamed> = ({
     );
 }
 
-export default ContainerNamed
+export default ContainerDropdown

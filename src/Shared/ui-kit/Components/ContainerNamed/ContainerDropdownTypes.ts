@@ -1,4 +1,4 @@
-export default interface PropsContainerNamed extends React.HTMLAttributes<HTMLDivElement>{
+export default interface PropsContainerDropdown extends React.HTMLAttributes<HTMLDivElement>{
     isDropdown?: boolean | undefined;
     isCollapsed?: boolean | undefined;
     headTitle?: string | undefined;
